@@ -1,0 +1,32 @@
+name: dummyjson_products_app
+description: A simple Flutter app that fetches products from the DummyJSON API, caches them in SQLite, and supports local CRUD, search, pagination, and offline access.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # For calling the DummyJSON REST API
+  http: ^1.2.0
+
+  # For local SQLite database (offline cache + local CRUD)
+  sqflite: ^2.3.0
+  path: ^1.9.0
+  path_provider: ^2.1.1
+
+  # For loading and caching product images from the internet
+  cached_network_image: ^3.3.1
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
